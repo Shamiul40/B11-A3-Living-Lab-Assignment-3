@@ -7,9 +7,82 @@
     <!-- tailwind and daisyUI cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    
+    <!-- adlam display font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+    <!-- sora font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .adlam-display{
+            font-family: "ADLaM Display", serif;
+        }
+        .sora{
+            font-family: "Sora", serif;
+        }
+    </style>
+
 </head>
 <body>
-    <h1></h1>
+  <header>
+    <nav class="sora bg-[#FFF9F4] h-20">
+        <div class="navbar max-w-[1320px] mx-auto pt-3">
+            <div class="navbar-start">
+                <img class="mr-3" src="images/logo-header.png" alt="">
+                <a class=" text-[1.6rem] hidden sm:block">Browse<span class="text-[#FFDC26]">4</span>Pets</a>
+            </div>
+
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 text-[#111111]">
+                <li><a>Find a pet</a></li>
+                <li><a>Breeds</a></li>
+                <li><a>Contact us</a></li>
+              </ul>
+            </div>
+
+            <div class="navbar-end space-x-5 text-[#111111] hidden  lg:flex ">
+              <span><i class="fa-regular fa-bell"></i></span> 
+              <span><i class="fa-solid fa-magnifying-glass"></i></span>
+              <a class=" border border-[#FFDC26] px-[30px] py-[10px] rounded-lg hover:bg-[#FFDC26] ">Login</a>
+              <a class=" bg-[#FFDC26] px-[30px] py-[10px] rounded-lg  hover:bg-[#111111] hover:text-white ">Register</a>
+            </div>
+
+            <div class="dropdown flex navbar-end lg:hidden  ">
+                <div tabindex="0" role="button" class="btn btn-ghost  ">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                </ul>
+              </div>
+
+          </div>      
+    </nav>
+  </header>
+
+  <main>
+
+  </main>
+
+  <footer>
+
+  </footer>
 </body>
 </html>
